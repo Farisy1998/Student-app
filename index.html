@@ -5,63 +5,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Application Form</title>
 </head>
 <body>
-    <center><u><h1>Student Application</h1></u></center>
+    <form action="">
+        <center><u><h1>Student Application</h1></u></center>
     <table class="table">
         <tr>
-            <td>Name</td>
+            <td>First name</td>
+            <td><input type="text" class="form-control" required></td>
+        </tr>
+        <tr>
+            <td>Last name</td>
             <td><input type="text" class="form-control"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td><input type="radio" name="flexRadioDefault" class="form-check-input"> Male&nbsp;&nbsp;&nbsp;<input type="radio" name="flexRadioDefault" class="form-check-input"> Female</td>
         </tr>
         <tr>
             <td>Addmission no:</td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control" required></td>
         </tr>
         <tr>
             <td>Roll no:</td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control" required></td>
         </tr>
         <tr>
             <td>College</td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control" required></td>
         </tr>
         <tr>
             <td>Department</td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control" required></td>
         </tr>
         <tr>
             <td>Address</td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control" required></td>
         </tr>
         <tr>
             <td>Educational qualification</td>
-            <td><input type="text" class="form-control"></td>
+            <td><select name="qual" class="form-select">
+                <option value="SSLC">SSLC</option>
+                <option value="">PLUS TWO</option>
+                <option value="">UG</option>
+                <option value="">PG</option>
+                <option value="">PHD</option>
+            </select></td>
         </tr>
         <tr>
             <td>DOB</td>
-            <td><input type="date" class="form-control"></td>
+            <td><input type="date" class="form-control" required></td>
         </tr>
         <tr>
             <td>Email id</td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control" required></td>
         </tr>
         <tr>
             <td>Username</td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control" required></td>
         </tr>
         <tr>
             <td>Password</td>
-            <td><input type="password" class="form-control"></td>
+            <td><input type="password" class="form-control" required></td>
         </tr>
         <tr>
             <td>Confirm password</td>
-            <td><input type="password" class="form-control"></td>
+            <td><input type="password" class="form-control" required></td>
         </tr>
         <tr>
             <td></td>
             <td><button class="btn btn-primary">REGISTER</button></td>
         </tr>
     </table>
+    </form>
 </body>
 </html>
